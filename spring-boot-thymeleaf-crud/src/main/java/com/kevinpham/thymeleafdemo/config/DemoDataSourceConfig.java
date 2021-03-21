@@ -1,4 +1,4 @@
-package com.luv2code.springboot.thymeleafdemo.config;
+package com.kevinpham.thymeleafdemo.config;
 
 import javax.sql.DataSource;
 

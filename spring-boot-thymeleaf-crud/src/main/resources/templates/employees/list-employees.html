@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
 	<title>Employee Directory</title>
+	<style>
+	    .childDiv {
+	        width: 25%;
+	        float: left;
+	    }
+	</style>
 </head>
 
 <body>
@@ -58,7 +64,7 @@
 				<td th:text="${tempEmployee.email}" />	
 				
 				<td>
-					<div sec:authorize="hasAnyRole('ROLE_MANAGER', 'ROLE_ADMIN')">
+					<div sec:authorize="hasAnyRole('ROLE_MANAGER', 'ROLE_ADMIN')" class="childDiv" >
 
 						<!-- Add "update" button/link -->
 						<a th:href="@{/employees/showFormForUpdate(employeeId=${tempEmployee.id})}"
@@ -68,7 +74,7 @@
 
 					</div>					
 				
-					<div sec:authorize="hasRole('ROLE_ADMIN')">  
+					<div sec:authorize="hasRole('ROLE_ADMIN')" class="childDiv">  
 					
 						<!-- Add "delete" button/link -->					
 						<a th:href="@{/employees/delete(employeeId=${tempEmployee.id})}"
