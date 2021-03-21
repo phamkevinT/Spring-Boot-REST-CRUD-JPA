@@ -1,5 +1,11 @@
 package com.kevinpham.thymeleafdemo.entity;
 
+/**
+ * 
+ * Base entity class
+ * 
+ */
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
