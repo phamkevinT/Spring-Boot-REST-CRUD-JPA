@@ -64,6 +64,7 @@
 				<td th:text="${tempEmployee.email}" />	
 				
 				<td>
+					<!-- Require that user has MANAGER or ADMIN role to be able to see Update button -->
 					<div sec:authorize="hasAnyRole('ROLE_MANAGER', 'ROLE_ADMIN')" class="childDiv" >
 
 						<!-- Add "update" button/link -->
@@ -74,6 +75,7 @@
 
 					</div>					
 				
+					<!-- Require that user has ADMIN role to view Delete button -->
 					<div sec:authorize="hasRole('ROLE_ADMIN')" class="childDiv">  
 					
 						<!-- Add "delete" button/link -->					
