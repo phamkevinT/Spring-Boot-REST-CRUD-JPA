@@ -19,11 +19,15 @@ public class EmployeeServiceImpl implements EmployeeService {
 		employeeRepository = theEmployeeRepository;
 	}
 	
+	
+	// get all employee sorted by their last name in ascending order
 	@Override
 	public List<Employee> findAll() {
 		return employeeRepository.findAllByOrderByLastNameAsc();
 	}
 
+	
+	// find an employee by their id
 	@Override
 	public Employee findById(int theId) {
 		Optional<Employee> result = employeeRepository.findById(theId);
@@ -41,16 +45,22 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return theEmployee;
 	}
 
+	
+	// save an employee
 	@Override
 	public void save(Employee theEmployee) {
 		employeeRepository.save(theEmployee);
 	}
 
+	
+	// delete an employee given their id
 	@Override
 	public void deleteById(int theId) {
 		employeeRepository.deleteById(theId);
 	}
 
+	
+	// search for an employee by name
 	@Override
 	public List<Employee> searchBy(String theName) {
 		
