@@ -1,5 +1,11 @@
 package com.kevinpham.thymeleafdemo.controller;
 
+/**
+ * 
+ * Takes care of login GET requests
+ * 
+ */
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -14,7 +20,6 @@ public class LoginController {
 	}
 	
 	// add request mapping for /access-denied
-	
 	@GetMapping("/access-denied")
 	public String showAccessDenied() {
 		
