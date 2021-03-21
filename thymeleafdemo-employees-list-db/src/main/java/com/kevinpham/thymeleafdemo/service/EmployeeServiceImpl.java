@@ -9,6 +9,12 @@ import org.springframework.stereotype.Service;
 import com.kevinpham.thymeleafdemo.dao.EmployeeRepository;
 import com.kevinpham.thymeleafdemo.entity.Employee;
 
+/**
+ * 
+ * Implementation of our EmployeeService class
+ *
+ */
+
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 

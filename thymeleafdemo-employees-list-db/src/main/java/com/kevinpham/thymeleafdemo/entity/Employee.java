@@ -7,6 +7,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * 
+ * Our base employee entity class
+ *
+ */
+
 @Entity
 @Table(name="employee")
 public class Employee {

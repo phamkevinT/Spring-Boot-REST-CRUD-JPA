@@ -4,6 +4,12 @@ import java.util.List;
 
 import com.kevinpham.thymeleafdemo.entity.Employee;
 
+/**
+ * 
+ * Our EmployeeService interface class that will be implemented by the EmployeeServiceImpl class
+ *
+ */
+
 public interface EmployeeService {
 
 		// Return list of all employees

@@ -31,6 +31,7 @@ public class EmployeeController {
 		// add to spring model
 		theModel.addAttribute("employees", theEmployees);
 		
+		// return the thymleaf html template view
 		return "list-employees";
 	}
 	
