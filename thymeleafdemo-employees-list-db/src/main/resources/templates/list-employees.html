@@ -26,7 +26,7 @@
 		<hr>
 
 		<table class="table table-border table-striped">
-			<thead class="thead-dark">
+			<thead class="table-dark">
 				<tr>
 					<th>First Name</th>
 					<th>Last Name</th>
@@ -35,6 +35,7 @@
 			</thead>
 
 			<tbody>
+				<!-- Get employee from the Spring model from EmployeeController -->
 				<tr th:each="tempEmployee : ${employees}">
 					<td th:text="${tempEmployee.firstName}">
 					<td th:text="${tempEmployee.lastName}">
