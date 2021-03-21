@@ -1,5 +1,7 @@
 package com.kevinpham.thymeleafdemo.dao;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.kevinpham.thymeleafdemo.entity.Employee;
@@ -22,5 +24,10 @@ import com.kevinpham.thymeleafdemo.entity.Employee;
  */
 
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
+	
+	// Add a method to sort by last name
+	// Spring Data JPA will parse the method name to create appropriate query:
+	// 'find all by' .... 'order by last name ascending'
+	public List<Employee> findAllByOrderByLastNameAsc();
 
 }
