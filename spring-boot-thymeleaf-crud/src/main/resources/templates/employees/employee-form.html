@@ -1,4 +1,7 @@
 <!DOCTYPE HTML>
+
+<!-- Form for adding a new employee to database -->
+
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
@@ -21,12 +24,14 @@
 		
 		<p class="h4 mb-4">Save Employee</p>
 	
+		<!-- Action: Redirect to /employees/save -->
 		<form th:action="@{/employees/save}"
 			  th:object="${employee}" method="POST">
 		
-			<!-- Add hidden form field to handle update -->
+			<!-- Hidden form field to handle update -->
 			<input type="hidden" th:field="*{id}" />
 			
+			<!-- *{...} refers to the property of the employee object -->
 			<input type="text" th:field="*{firstName}"
 					class="form-control mb-4 col-4" placeholder="First name">
 
