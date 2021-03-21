@@ -1,5 +1,12 @@
 package com.kevinpham.thymeleafdemo.config;
 
+/**
+ * 
+ * Datasource for application security.
+ * Used for accessing security info database.
+ * 
+ */
+
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
