@@ -1,4 +1,4 @@
-Spring-Boot-Thymeleaf-CRUD
+#Spring-Boot-Thymeleaf-CRUD
 A customer relationship management application using Spring MVC, Spring Boot, REST CRUD API with JPA, Thymeleaf, and MySQL database.
 
 ## The Big Picture
