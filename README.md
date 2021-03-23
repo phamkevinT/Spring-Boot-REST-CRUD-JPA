@@ -1,4 +1,4 @@
-# Spring-Boot-REST-JPA-CRUD
+# Spring-Boot-REST-CRUD-JPA
 A customer relationship management application using Spring MVC, Spring Boot, REST CRUD API with JPA, Thymeleaf, and MySQL database.
 
 ## The Big Picture
