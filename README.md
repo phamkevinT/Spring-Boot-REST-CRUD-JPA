@@ -44,4 +44,4 @@ After implementing the JpaRepository, we get access to the following methods...
 ## Course Material
 [Spring & Hibernate for Beginners (includes Spring Boot)](https://www.udemy.com/course/spring-hibernate-tutorial/)
 
-Images courtesy of [luv2code](www.luv2code.com)
+Images courtesy of [luv2code](http://www.luv2code.com/)
